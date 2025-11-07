@@ -25,18 +25,21 @@ public class InventoryServiceApplication {
                     .name("Product 1")
                     .price(1299)
                     .quantity(2)
+                    .selected(true)
                     .build());
             productRepository.save(Product.builder()
                     .id(UUID.randomUUID().toString())
                     .name("Product 2")
                     .price(1299)
                     .quantity(4)
+                    .selected(true)
                     .build());
             productRepository.save(Product.builder()
                     .id(UUID.randomUUID().toString())
                     .name("Product 3")
                     .price(1299)
                     .quantity(3)
+                    .selected(true)
                     .build());
 
             productRepository.findAll().forEach(p->{
